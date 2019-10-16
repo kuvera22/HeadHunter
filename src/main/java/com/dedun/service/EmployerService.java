@@ -5,7 +5,6 @@ import com.dedun.dto.response.EmployerResponse;
 import com.dedun.exception.HeadHunterErrorCode;
 import com.dedun.exception.HeadHunterException;
 import com.dedun.model.Employer;
-import com.dedun.model.Worker;
 import com.dedun.repository.EmployerRepository;
 import com.dedun.validator.EmployerValidator;
 import org.springframework.stereotype.Service;

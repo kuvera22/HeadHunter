@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="80e85abc-8b76-428a-9a90-b99ee65af673" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dedun/exception/HeadHunterErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dedun/exception/HeadHunterErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dedun/service/EmployerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dedun/service/EmployerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dedun/exception/HeadHunterErrorCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dedun/exception/HeadHunterErrorCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dedun/service/EmployerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dedun/service/EmployerService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +33,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1SA3D9ce0cwxoxru0MutqqZ0uqz" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -110,7 +116,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

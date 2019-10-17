@@ -33,7 +33,7 @@ public class SummaryController {
         return summaryService.edit(summaryRequest,id);
     }
     @GetMapping(value = "{id}")
-    public SummaryResponse getSummaryById(@PathVariable(value = "id") int id){return summaryService.getSummaryById(id);}
+    public SummaryResponse getSummaryById(@PathVariable(value = "id") int id) throws HeadHunterException {return summaryService.getSummaryById(id);}
 
     @DeleteMapping(value = "{id}")
     public void delete(@PathVariable(value = "id") int id) throws HeadHunterException {

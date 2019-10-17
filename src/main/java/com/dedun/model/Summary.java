@@ -1,5 +1,8 @@
 package com.dedun.model;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.Objects;
@@ -21,6 +24,7 @@ public class Summary {
 
     @OneToOne
     @JoinColumn(name = "worker_id")
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private Worker worker;
 
     public Summary() {

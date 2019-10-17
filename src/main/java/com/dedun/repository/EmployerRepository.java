@@ -11,6 +11,5 @@ public interface EmployerRepository extends JpaRepository<Employer, Integer> {
 
     Employer getByLogin(String login);
     Employer getById(int id);
-
     Optional<Employer> findById(int id);
 }

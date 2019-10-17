@@ -60,9 +60,9 @@ public class WorkerService {
 
     public void delete(int id) throws HeadHunterException {
         Worker worker = workerRepository.findById(id).orElseThrow(() -> new HeadHunterException(HeadHunterErrorCode.WORKER_NOT_EXIST));
-        Summary summary = summaryRepository.findByWorkerId(worker.getId()).orElseThrow(() -> new HeadHunterException(HeadHunterErrorCode.SUMMARY_NOT_EXIST));
+       // Summary summary = summaryRepository.findByWorkerId(worker.getId()).orElseThrow(() -> new HeadHunterException(HeadHunterErrorCode.SUMMARY_NOT_EXIST));
         workerRepository.delete(worker);
-        summaryRepository.delete(summary);
+     //   summaryRepository.delete(summary);
 
     }
 }

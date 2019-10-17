@@ -7,9 +7,8 @@ public enum  HeadHunterErrorCode {
     EMPLOYER_EXIST("Employer already in DB"),
     EMPLOYER_NOT_EXIST("Employer not exist"),
     SUMMARY_NOT_EXIST("Summary not exist"),
-    WORKER_EXIST_SUMMARY("Worker's summary exist");
-
-
+    WORKER_EXIST_SUMMARY("Worker's summary exist"),
+    VACANCY_NOT_EXIST ("Vacancy doesn't exist");
     private String errorCode;
 
     HeadHunterErrorCode(String errorCode) {

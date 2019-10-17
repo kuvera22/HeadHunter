@@ -27,9 +27,11 @@ public class SummaryService {
     public SummaryResponse create(SummaryRequest summaryRequest, int id) throws HeadHunterException {
         Worker worker = workerRepository.findById(id)
                 .orElseThrow(() -> new HeadHunterException(HeadHunterErrorCode.WORKER_NOT_EXIST));
+
         if (worker.getSummary() != null) {
             throw new HeadHunterException(HeadHunterErrorCode.WORKER_EXIST_SUMMARY);
         }
+
         Summary summary = new Summary(summaryRequest.getMobilePhone(), summaryRequest.getCity(),
                 summaryRequest.getDateOfBirth(), summaryRequest.getSex(), summaryRequest.getWorkExperience(),
                 summaryRequest.getEducationalInstitution(), summaryRequest.getDesiredSalary(), worker);
@@ -74,8 +76,8 @@ public class SummaryService {
         summaryRepository.delete(summary);
     }
 
-    public SummaryResponse getSummaryById(int id) {
-        Summary summary = summaryRepository.getById(id);
+    public SummaryResponse getSummaryById(int id) throws HeadHunterException {
+        Summary summary = summaryRepository.findById(id).orElseThrow(() -> new HeadHunterException(HeadHunterErrorCode.SUMMARY_NOT_EXIST));
         return new SummaryResponse(summary.getId(), summary.getMobilePhone(),
                 summary.getCity(), summary.getDateOfBirth(), summary.getSex(),
                 summary.getWorkExperience(), summary.getEducationalInstitution(), summary.getDesiredSalary(),

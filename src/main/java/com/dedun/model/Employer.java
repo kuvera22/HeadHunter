@@ -2,6 +2,7 @@ package com.dedun.model;
 
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -16,6 +17,9 @@ public class Employer {
     private String firstName;
     private String lastName;
     private String email;
+
+  @OneToMany(fetch=FetchType.LAZY, cascade = CascadeType.ALL, mappedBy="employer")
+   public List<Vacancies> vacancies;
 
     public Employer() {
     }

@@ -21,6 +21,7 @@ public class Summary {
     private Integer workExperience;
     private String educationalInstitution;
     private int desiredSalary;
+    private String educationalLevel;
 
     @OneToOne
     @JoinColumn(name = "worker_id")
@@ -30,7 +31,7 @@ public class Summary {
     public Summary() {
     }
 
-    public Summary(String mobilePhone, String city, LocalDate dateOfBirth, String sex, Integer workExperience, String educationalInstitution, int desiredSalary, Worker worker) {
+    public Summary(String mobilePhone, String city, LocalDate dateOfBirth, String sex, Integer workExperience, String educationalInstitution, int desiredSalary, String educationalLevel, Worker worker) {
         this.mobilePhone = mobilePhone;
         this.city = city;
         this.dateOfBirth = dateOfBirth;
@@ -38,6 +39,7 @@ public class Summary {
         this.workExperience = workExperience;
         this.educationalInstitution = educationalInstitution;
         this.desiredSalary = desiredSalary;
+        this.educationalLevel = educationalLevel;
         this.worker = worker;
     }
 
@@ -105,6 +107,14 @@ public class Summary {
         this.desiredSalary = desiredSalary;
     }
 
+    public String getEducationalLevel() {
+        return educationalLevel;
+    }
+
+    public void setEducationalLevel(String educationalLevel) {
+        this.educationalLevel = educationalLevel;
+    }
+
     public Worker getWorker() {
         return worker;
     }
@@ -113,14 +123,13 @@ public class Summary {
         this.worker = worker;
     }
 
-
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Summary)) return false;
         Summary summary = (Summary) o;
         return getDesiredSalary() == summary.getDesiredSalary() &&
+                getEducationalLevel() == summary.getEducationalLevel() &&
                 Objects.equals(getId(), summary.getId()) &&
                 Objects.equals(getMobilePhone(), summary.getMobilePhone()) &&
                 Objects.equals(getCity(), summary.getCity()) &&
@@ -133,6 +142,6 @@ public class Summary {
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getMobilePhone(), getCity(), getDateOfBirth(), getSex(), getWorkExperience(), getEducationalInstitution(), getDesiredSalary(), getWorker());
+        return Objects.hash(getId(), getMobilePhone(), getCity(), getDateOfBirth(), getSex(), getWorkExperience(), getEducationalInstitution(), getDesiredSalary(), getEducationalLevel(), getWorker());
     }
 }

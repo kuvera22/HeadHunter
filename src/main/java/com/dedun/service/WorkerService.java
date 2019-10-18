@@ -19,12 +19,10 @@ public class WorkerService {
 
     private final WorkerRepository workerRepository;
     private final WorkerValidator workerValidator;
-    private final SummaryRepository summaryRepository; //ПАМАГИТИ
 
-    public WorkerService(WorkerRepository workerRepository, WorkerValidator workerValidator, SummaryRepository summaryRepository) {
+    public WorkerService(WorkerRepository workerRepository, WorkerValidator workerValidator) {
         this.workerRepository = workerRepository;
         this.workerValidator = workerValidator;
-        this.summaryRepository = summaryRepository; //ПАМАГИТИ
     }
 
 

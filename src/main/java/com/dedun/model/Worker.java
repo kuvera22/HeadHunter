@@ -16,6 +16,7 @@ public class Worker {
     private String email;
 
     @OneToOne(mappedBy = "worker", cascade = CascadeType.REMOVE)
+
     private Summary summary;
 
     public Worker() {

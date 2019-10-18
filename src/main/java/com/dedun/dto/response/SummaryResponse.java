@@ -11,12 +11,13 @@ public class SummaryResponse {
     private Integer workExperience;
     private String educationalInstitution;
     private int desiredSalary;
+    private String educationalLevel;
     private WorkerResponse workerResponse;
 
     public SummaryResponse() {
     }
 
-    public SummaryResponse(Integer id, String mobilePhone, String city, LocalDate dateOfBirth, String sex, Integer workExperience, String educationalInstitution, int desiredSalary, WorkerResponse workerResponse) {
+    public SummaryResponse(Integer id, String mobilePhone, String city, LocalDate dateOfBirth, String sex, Integer workExperience, String educationalInstitution, int desiredSalary, String educationalLevel, WorkerResponse workerResponse) {
         this.id = id;
         this.mobilePhone = mobilePhone;
         this.city = city;
@@ -25,6 +26,7 @@ public class SummaryResponse {
         this.workExperience = workExperience;
         this.educationalInstitution = educationalInstitution;
         this.desiredSalary = desiredSalary;
+        this.educationalLevel = educationalLevel;
         this.workerResponse = workerResponse;
     }
 
@@ -90,6 +92,14 @@ public class SummaryResponse {
 
     public void setDesiredSalary(int desiredSalary) {
         this.desiredSalary = desiredSalary;
+    }
+
+    public String getEducationalLevel() {
+        return educationalLevel;
+    }
+
+    public void setEducationalLevel(String educationalLevel) {
+        this.educationalLevel = educationalLevel;
     }
 
     public WorkerResponse getWorkerResponse() {

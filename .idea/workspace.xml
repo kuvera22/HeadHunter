@@ -3,17 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="80e85abc-8b76-428a-9a90-b99ee65af673" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dedun/controller/SummaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dedun/controller/SummaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dedun/exception/HeadHunterErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dedun/exception/HeadHunterErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dedun/model/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dedun/model/Employer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dedun/dto/request/SummaryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dedun/dto/request/SummaryRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dedun/dto/response/SummaryResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dedun/dto/response/SummaryResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dedun/model/Summary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dedun/model/Summary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dedun/repository/EmployerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dedun/repository/EmployerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dedun/service/EmployerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dedun/service/EmployerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dedun/model/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dedun/model/Worker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dedun/service/SummaryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dedun/service/SummaryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dedun/service/WorkerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dedun/service/WorkerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dedun/exception/HeadHunterErrorCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dedun/exception/HeadHunterErrorCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dedun/model/Employer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dedun/model/Employer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dedun/dto/request/SummaryRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dedun/dto/request/SummaryRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dedun/dto/response/SummaryResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dedun/dto/response/SummaryResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dedun/model/Summary.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dedun/model/Summary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dedun/model/Worker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dedun/model/Worker.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dedun/service/SummaryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dedun/service/SummaryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dedun/service/WorkerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dedun/service/WorkerService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

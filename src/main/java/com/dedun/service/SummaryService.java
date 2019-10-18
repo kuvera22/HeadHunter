@@ -34,12 +34,12 @@ public class SummaryService {
 
         Summary summary = new Summary(summaryRequest.getMobilePhone(), summaryRequest.getCity(),
                 summaryRequest.getDateOfBirth(), summaryRequest.getSex(), summaryRequest.getWorkExperience(),
-                summaryRequest.getEducationalInstitution(), summaryRequest.getDesiredSalary(), worker);
+                summaryRequest.getEducationalInstitution(), summaryRequest.getDesiredSalary(),summaryRequest.getEducationalLevel(), worker);
         summaryRepository.save(summary);
         return new SummaryResponse(summary.getId(), summary.getMobilePhone(),
                 summary.getCity(), summary.getDateOfBirth(), summary.getSex(),
                 summary.getWorkExperience(), summary.getEducationalInstitution(),
-                summary.getDesiredSalary(), new WorkerResponse(worker.getId(), worker.getLogin(),
+                summary.getDesiredSalary(), summary.getEducationalLevel(), new WorkerResponse(worker.getId(), worker.getLogin(),
                 worker.getFirstName(), worker.getLastName(), worker.getEmail()));
     }
 
@@ -53,10 +53,11 @@ public class SummaryService {
         summary.setMobilePhone(summaryRequest.getMobilePhone());
         summary.setSex(summaryRequest.getSex());
         summary.setWorkExperience(summaryRequest.getWorkExperience());
+        summary.setEducationalLevel(summaryRequest.getEducationalLevel());
         summaryRepository.save(summary);
         return new SummaryResponse(summary.getId(), summary.getMobilePhone(), summary.getCity(),
                 summary.getDateOfBirth(), summary.getSex(), summary.getWorkExperience(),
-                summary.getEducationalInstitution(), summary.getDesiredSalary(),
+                summary.getEducationalInstitution(), summary.getDesiredSalary(), summary.getEducationalLevel(),
                 new WorkerResponse(summary.getWorker().getId(), summary.getWorker().getLogin(),
                         summary.getWorker().getFirstName(), summary.getWorker().getLastName(), summary.getWorker().getEmail()));
     }
@@ -65,7 +66,7 @@ public class SummaryService {
         return summaryRepository.findAll().stream()
                 .map(summary -> new SummaryResponse(summary.getId(), summary.getMobilePhone(),
                         summary.getCity(), summary.getDateOfBirth(), summary.getSex(), summary.getWorkExperience(),
-                        summary.getEducationalInstitution(), summary.getDesiredSalary(),
+                        summary.getEducationalInstitution(), summary.getDesiredSalary(), summary.getEducationalLevel(),
                         new WorkerResponse(summary.getWorker().getId(), summary.getWorker().getLogin(),
                                 summary.getWorker().getFirstName(), summary.getWorker().getLastName(),
                                 summary.getWorker().getEmail()))).collect(Collectors.toList());
@@ -80,7 +81,7 @@ public class SummaryService {
         Summary summary = summaryRepository.findById(id).orElseThrow(() -> new HeadHunterException(HeadHunterErrorCode.SUMMARY_NOT_EXIST));
         return new SummaryResponse(summary.getId(), summary.getMobilePhone(),
                 summary.getCity(), summary.getDateOfBirth(), summary.getSex(),
-                summary.getWorkExperience(), summary.getEducationalInstitution(), summary.getDesiredSalary(),
+                summary.getWorkExperience(), summary.getEducationalInstitution(), summary.getDesiredSalary(), summary.getEducationalLevel(),
                 new WorkerResponse(summary.getWorker().getId(), summary.getWorker().getLogin(),
                         summary.getWorker().getFirstName(), summary.getWorker().getLastName(), summary.getWorker().getEmail()));
     }
